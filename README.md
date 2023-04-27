@@ -1,1 +1,2 @@
 # JavaScript30
+JavaScript30練習與紀錄區
