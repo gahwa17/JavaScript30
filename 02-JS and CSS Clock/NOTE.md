@@ -13,7 +13,7 @@ function echoSecDegree() {
     console.log(`rotate(${secondDegree}deg)`);
 }
 ```
-![]02-JS and CSS Clock\GIF\異常抖動.gif
+![image](https://github.com/gahwa17/JavaScript30/blob/main/02-JS%20and%20CSS%20Clock/GIF/%E7%95%B0%E5%B8%B8%E6%8A%96%E5%8B%95%E8%A7%80%E5%AF%9F.gif)
 
 2. 時針抖動效果
     
@@ -21,3 +21,4 @@ function echoSecDegree() {
     ```javascript
     transition-timing-function: linear
     ```
+![image](https://github.com/gahwa17/JavaScript30/blob/main/02-JS%20and%20CSS%20Clock/GIF/%E9%9B%BB%E5%AD%90%E9%90%98%E6%95%88%E6%9E%9C.gif)
