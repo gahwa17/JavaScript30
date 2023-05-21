@@ -13,8 +13,8 @@ function echoSecDegree() {
     console.log(`rotate(${secondDegree}deg)`);
 }
 ```
+![]02-JS and CSS Clock\GIF\異常抖動.gif
 
-    
 2. 時針抖動效果
     
     指針的 `transition-timing-function` 屬性設定，可以透過貝茲曲線概念來客製化想要的指針走動效果，原始專案為ticktok效果，而在下面這段則可以呈現電子鐘 (持續平滑走動) 效果
