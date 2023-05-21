@@ -33,7 +33,22 @@ function updateDate(){
 initData();
 setInterval(updateDate, 1000);
 
-/* 解法一: 將duration設為0秒，相當於取消掉動畫效果，立即歸零回整點，避免444度到90度的異常動畫
+
+/*Test code
+function echoSecDegree() {
+    const now = new Date();
+
+    const second = now.getSeconds();
+    const secondDegree = ((second / 60) * 360) + 90;
+    console.log(`rotate(${secondDegree}deg)`);
+}
+*/
+
+/*解法一: 將duration設為0秒，相當於取消掉動畫效果，立即歸零回整點，避免444度到90度的異常動畫
+const secondHand = document.querySelector('.second-hand');
+const minsHand = document.querySelector('.min-hand');
+const hourHand = document.querySelector('.hour-hand');
+
 function setDate() {
     const now = new Date();
 
@@ -47,13 +62,15 @@ function setDate() {
     const minDegree = ((minute / 60) * 360) + 90;
     const hourDegree = ((hour / 12) * 360) + 90;
  
-    if(secondDegree == 90){
-        secondHand.style.transition = `all 0s`;
-    }
+    // if(secondDegree == 90){
+    //     secondHand.style.transition = `all 0s`;
+    // }
     
     secondHand.style.transform = `rotate(${secondDegree}deg`;
     minsHand.style.transform = `rotate(${minDegree}deg`;
     hourHand.style.transform = `rotate(${hourDegree}deg`;
 };
-setInterval(updateDate, 1000);
+
+setInterval(echoSecDegree, 1000);
+setInterval(setDate, 1000);
 */

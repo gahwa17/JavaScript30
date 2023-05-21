@@ -1,11 +1,12 @@
 html {
-  background: #018ded url(https://source.unsplash.com/hes6nUC1MVc);
-  backdrop-filter: blur(2px);
-  background-size: cover;
   font-size: 10px;
 }
 
 body {
+  background: #018ded url(https://source.unsplash.com/hes6nUC1MVc);
+  backdrop-filter: blur(8px);
+  background-size: cover;
+
   margin: 0;
   font-size: 2rem;
   display: flex;
@@ -41,10 +42,11 @@ body {
   top: 50%;
   right: 50%;
 
-  transform: rotate(90deg); /* 指針整點歸零 */
-  transform-origin: 100%; /* 調整旋轉中心，預設為50%*/
-  transition: all 0.05s; /* 動畫 */
+  transform: rotate(90deg);/* 指針整點歸零 */
+  transform-origin: 100%; /* 調整旋轉中心，預設為50% */
+  transition: all 1s; /* 動畫 */
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); /*tick*/
+  transition-timing-function: linear;
 }
 
 /* 調整指針造型 */
